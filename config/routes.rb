@@ -1,3 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root to: 'tasks#index' # top page
+  resources :tasks # rooting following all actions (tasks/*)
+  #get 'tasks/index'
+  #get 'tasks/show'
+  #get 'tasks/new'
+  #get 'tasks/edit'
 end
